@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Authors>Chun Liu</Authors>
+	<VersionPrefix>0.2.0</VersionPrefix>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Base\AzureDesignStudio.AzureResources.Base.csproj" />
+  </ItemGroup>
+
+</Project>
