@@ -17,18 +17,21 @@ namespace AzureDesignStudio.AzureResources.Base
         /// </summary>
         [Required]
         [JsonPropertyName("$schema")]
+        [JsonPropertyOrder(1)]
         public string Schema { get; set; }
 
         /// <summary>
         /// Additional unstructured metadata to include with the template deployment.
         /// </summary>
         [JsonPropertyName("metadata")]
+        [JsonPropertyOrder(3)]
         public object Metadata { get; set; }
 
         /// <summary>
         /// The apiProfile to use for all resources in the template.
         /// </summary>
         [JsonPropertyName("apiProfile")]
+        [JsonPropertyOrder(4)]
         public string ApiProfile { get; set; }
 
         /// <summary>
@@ -36,24 +39,28 @@ namespace AzureDesignStudio.AzureResources.Base
         /// </summary>
         [Required]
         [JsonPropertyName("contentVersion")]
+        [JsonPropertyOrder(2)]
         public string ContentVersion { get; set; }
 
         /// <summary>
         /// Variable definitions
         /// </summary>
         [JsonPropertyName("variables")]
+        [JsonPropertyOrder(6)]
         public object Variables { get; set; }
 
         /// <summary>
         /// Input parameter definitions
         /// </summary>
         [JsonPropertyName("parameters")]
+        [JsonPropertyOrder(5)]
         public IDictionary<string, Parameter> Parameters { get; set; }
 
         /// <summary>
         /// User defined functions
         /// </summary>
         [JsonPropertyName("functions")]
+        [JsonPropertyOrder(7)]
         public IList<FunctionNamespace> Functions { get; set; }
 
         /// <summary>
@@ -61,12 +68,14 @@ namespace AzureDesignStudio.AzureResources.Base
         /// </summary>
         [Required]
         [JsonPropertyName("resources")]
+        [JsonPropertyOrder(8)]
         public IList<ResourceBase> Resources { get; set; }
 
         /// <summary>
         /// Output parameter definitions
         /// </summary>
         [JsonPropertyName("outputs")]
+        [JsonPropertyOrder(9)]
         public IDictionary<string, Output> Outputs { get; set; }
     }
 }

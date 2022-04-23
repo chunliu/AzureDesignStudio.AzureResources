@@ -5,7 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Authors>Chun Liu</Authors>
-	<VersionPrefix>0.2.0</VersionPrefix>
+	<VersionPrefix>0.2.2</VersionPrefix>
   </PropertyGroup>
 
   <ItemGroup>

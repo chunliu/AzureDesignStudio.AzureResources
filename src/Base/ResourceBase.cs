@@ -11,12 +11,14 @@ namespace AzureDesignStudio.AzureResources.Base
         /// Location to deploy resource to
         /// </summary>
         [JsonPropertyName("location")]
+        [JsonPropertyOrder(-3)]
         public string Location { get; set; }
 
         /// <summary>
         /// Name-value pairs to add to the resource
         /// </summary>
         [JsonPropertyName("tags")]
+        [JsonPropertyOrder(-2)]
         public object Tags { get; set; }
         [JsonPropertyName("copy")]
         public ResourceCopy Copy { get; set; }
