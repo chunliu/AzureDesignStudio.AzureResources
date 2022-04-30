@@ -28,6 +28,6 @@ namespace AzureDesignStudio.AzureResources.Network
         [JsonPropertyName("properties")]
         public VirtualHubProperties Properties { get; set; }
         [JsonPropertyName("resources")]
-        public IList<VirtualHubs_hubRouteTables> Resources { get; set; }
+        public IList<VirtualHubsHubRouteTables> Resources { get; set; }
     }
 }

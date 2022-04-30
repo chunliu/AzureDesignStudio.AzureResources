@@ -28,6 +28,6 @@ namespace AzureDesignStudio.AzureResources.Network
         [JsonPropertyName("properties")]
         public VirtualRouterPropertiesFormat Properties { get; set; }
         [JsonPropertyName("resources")]
-        public IList<VirtualRouters_peerings> Resources { get; set; }
+        public IList<VirtualRoutersPeerings> Resources { get; set; }
     }
 }

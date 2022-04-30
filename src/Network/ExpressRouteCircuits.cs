@@ -34,6 +34,6 @@ namespace AzureDesignStudio.AzureResources.Network
         [JsonPropertyName("properties")]
         public ExpressRouteCircuitPropertiesFormat Properties { get; set; }
         [JsonPropertyName("resources")]
-        public IList<ExpressRouteCircuits_peerings> Resources { get; set; }
+        public IList<ExpressRouteCircuitsPeerings> Resources { get; set; }
     }
 }

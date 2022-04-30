@@ -28,6 +28,6 @@ namespace AzureDesignStudio.AzureResources.Network
         [JsonPropertyName("properties")]
         public ExpressRouteGatewayProperties Properties { get; set; }
         [JsonPropertyName("resources")]
-        public IList<ExpressRouteGateways_expressRouteConnections> Resources { get; set; }
+        public IList<ExpressRouteGatewaysExpressRouteConnections> Resources { get; set; }
     }
 }

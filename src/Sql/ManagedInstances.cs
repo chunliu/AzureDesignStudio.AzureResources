@@ -30,7 +30,7 @@ namespace AzureDesignStudio.AzureResources.Sql
         [JsonPropertyName("properties")]
         public ManagedInstanceProperties Properties { get; set; }
         [JsonPropertyName("resources")]
-        public IList<ManagedInstances_databases> Resources { get; set; }
+        public IList<ManagedInstancesDatabases> Resources { get; set; }
 
         /// <summary>
         /// An ARM Resource SKU.

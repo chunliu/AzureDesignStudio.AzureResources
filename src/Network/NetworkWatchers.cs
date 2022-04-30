@@ -28,6 +28,6 @@ namespace AzureDesignStudio.AzureResources.Network
         [JsonPropertyName("properties")]
         public NetworkWatcherPropertiesFormat Properties { get; set; }
         [JsonPropertyName("resources")]
-        public IList<NetworkWatchers_flowLogs> Resources { get; set; }
+        public IList<NetworkWatchersFlowLogs> Resources { get; set; }
     }
 }

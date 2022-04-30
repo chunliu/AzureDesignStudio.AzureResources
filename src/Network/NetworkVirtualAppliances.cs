@@ -34,6 +34,6 @@ namespace AzureDesignStudio.AzureResources.Network
         [JsonPropertyName("identity")]
         public ManagedServiceIdentity Identity { get; set; }
         [JsonPropertyName("resources")]
-        public IList<NetworkVirtualAppliances_inboundSecurityRules> Resources { get; set; }
+        public IList<NetworkVirtualAppliancesInboundSecurityRules> Resources { get; set; }
     }
 }

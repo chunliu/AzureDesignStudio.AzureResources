@@ -28,6 +28,6 @@ namespace AzureDesignStudio.AzureResources.Network
         [JsonPropertyName("properties")]
         public VpnGatewayProperties Properties { get; set; }
         [JsonPropertyName("resources")]
-        public IList<VpnGateways_natRules> Resources { get; set; }
+        public IList<VpnGatewaysNatRules> Resources { get; set; }
     }
 }

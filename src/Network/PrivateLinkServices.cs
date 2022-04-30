@@ -34,6 +34,6 @@ namespace AzureDesignStudio.AzureResources.Network
         [JsonPropertyName("properties")]
         public PrivateLinkServiceProperties Properties { get; set; }
         [JsonPropertyName("resources")]
-        public IList<PrivateLinkServices_privateEndpointConnections> Resources { get; set; }
+        public IList<PrivateLinkServicesPrivateEndpointConnections> Resources { get; set; }
     }
 }

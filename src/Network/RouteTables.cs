@@ -28,6 +28,6 @@ namespace AzureDesignStudio.AzureResources.Network
         [JsonPropertyName("properties")]
         public RouteTablePropertiesFormat Properties { get; set; }
         [JsonPropertyName("resources")]
-        public IList<RouteTables_routes> Resources { get; set; }
+        public IList<RouteTablesRoutes> Resources { get; set; }
     }
 }

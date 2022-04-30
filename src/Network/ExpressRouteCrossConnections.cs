@@ -28,6 +28,6 @@ namespace AzureDesignStudio.AzureResources.Network
         [JsonPropertyName("properties")]
         public ExpressRouteCrossConnectionProperties Properties { get; set; }
         [JsonPropertyName("resources")]
-        public IList<ExpressRouteCrossConnections_peerings> Resources { get; set; }
+        public IList<ExpressRouteCrossConnectionsPeerings> Resources { get; set; }
     }
 }

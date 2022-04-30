@@ -28,6 +28,6 @@ namespace AzureDesignStudio.AzureResources.Network
         [JsonPropertyName("properties")]
         public NetworkSecurityGroupPropertiesFormat Properties { get; set; }
         [JsonPropertyName("resources")]
-        public IList<NetworkSecurityGroups_securityRules> Resources { get; set; }
+        public IList<NetworkSecurityGroupsSecurityRules> Resources { get; set; }
     }
 }

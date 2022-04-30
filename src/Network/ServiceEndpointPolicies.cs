@@ -28,6 +28,6 @@ namespace AzureDesignStudio.AzureResources.Network
         [JsonPropertyName("properties")]
         public ServiceEndpointPolicyPropertiesFormat Properties { get; set; }
         [JsonPropertyName("resources")]
-        public IList<ServiceEndpointPolicies_serviceEndpointPolicyDefinitions> Resources { get; set; }
+        public IList<ServiceEndpointPoliciesServiceEndpointPolicyDefinitions> Resources { get; set; }
     }
 }

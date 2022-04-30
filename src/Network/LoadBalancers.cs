@@ -40,6 +40,6 @@ namespace AzureDesignStudio.AzureResources.Network
         [JsonPropertyName("properties")]
         public LoadBalancerPropertiesFormat Properties { get; set; }
         [JsonPropertyName("resources")]
-        public IList<LoadBalancers_inboundNatRules> Resources { get; set; }
+        public IList<LoadBalancersInboundNatRules> Resources { get; set; }
     }
 }

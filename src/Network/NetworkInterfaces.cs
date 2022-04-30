@@ -34,6 +34,6 @@ namespace AzureDesignStudio.AzureResources.Network
         [JsonPropertyName("properties")]
         public NetworkInterfacePropertiesFormat Properties { get; set; }
         [JsonPropertyName("resources")]
-        public IList<NetworkInterfaces_tapConfigurations> Resources { get; set; }
+        public IList<NetworkInterfacesTapConfigurations> Resources { get; set; }
     }
 }

@@ -30,7 +30,7 @@ namespace AzureDesignStudio.AzureResources.Sql
         [JsonPropertyName("properties")]
         public ServerProperties Properties { get; set; }
         [JsonPropertyName("resources")]
-        public IList<Servers_databases> Resources { get; set; }
+        public IList<ServersDatabases> Resources { get; set; }
 
         [Required]
         [JsonPropertyName("type")]

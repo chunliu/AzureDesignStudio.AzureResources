@@ -40,6 +40,6 @@ namespace AzureDesignStudio.AzureResources.Network
         [JsonPropertyName("identity")]
         public ManagedServiceIdentity Identity { get; set; }
         [JsonPropertyName("resources")]
-        public IList<ApplicationGateways_privateEndpointConnections> Resources { get; set; }
+        public IList<ApplicationGatewaysPrivateEndpointConnections> Resources { get; set; }
     }
 }

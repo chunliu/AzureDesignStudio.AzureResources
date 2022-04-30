@@ -34,6 +34,6 @@ namespace AzureDesignStudio.AzureResources.Network
         [JsonPropertyName("identity")]
         public ManagedServiceIdentity Identity { get; set; }
         [JsonPropertyName("resources")]
-        public IList<FirewallPolicies_ruleCollectionGroups> Resources { get; set; }
+        public IList<FirewallPoliciesRuleCollectionGroups> Resources { get; set; }
     }
 }
