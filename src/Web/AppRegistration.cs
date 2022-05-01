@@ -1,0 +1,26 @@
+using System;
+using System.CodeDom.Compiler;
+using System.Text.Json.Serialization;
+using AzureDesignStudio.AzureResources.Base;
+
+namespace AzureDesignStudio.AzureResources.Web
+{
+    /// <summary>
+    /// The configuration settings of the app registration for providers that have app ids and app secrets
+    /// </summary>
+    [GeneratedCode("Microsoft.Json.Schema.ToDotNet", "1.1.3.0")]
+    public partial class AppRegistration
+    {
+        /// <summary>
+        /// The App ID of the app used for login.
+        /// </summary>
+        [JsonPropertyName("appId")]
+        public string AppId { get; set; }
+
+        /// <summary>
+        /// The app setting name that contains the app secret.
+        /// </summary>
+        [JsonPropertyName("appSecretSettingName")]
+        public string AppSecretSettingName { get; set; }
+    }
+}

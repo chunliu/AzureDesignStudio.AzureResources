@@ -6,6 +6,7 @@
     <Authors>Chun Liu</Authors>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
 	<VersionPrefix>0.1.2</VersionPrefix>
+	<RepositoryUrl>https://github.com/chunliu/AzureDesignStudio.AzureResources</RepositoryUrl>
   </PropertyGroup>
 
 </Project>
