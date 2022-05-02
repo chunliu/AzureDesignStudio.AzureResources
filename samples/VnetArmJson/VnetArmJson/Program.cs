@@ -1,9 +1,9 @@
 ﻿using AzureDesignStudio.AzureResources.Base;
 using AzureDesignStudio.AzureResources.Network;
-using CreateVNet;
 using System.Text.Encodings.Web;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using VnetArmJson;
 
 VirtualNetworks vnet = new()
 {
@@ -44,4 +44,3 @@ var template = JsonSerializer.Serialize(deploymentTemplate,
     });
 
 Console.Write(template);
-

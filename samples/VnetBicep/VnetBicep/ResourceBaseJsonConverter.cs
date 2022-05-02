@@ -2,7 +2,7 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace CreateVNet
+namespace VnetBicep
 {
     internal class ResourceBaseJsonConverter : JsonConverter<ResourceBase>
     {

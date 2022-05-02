@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateVNet", "CreateVNet\CreateVNet.csproj", "{B418F48C-DE8C-4E1A-96EF-02B485805560}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VnetBicep", "VnetBicep\VnetBicep.csproj", "{52DA5F33-9527-4636-9FEC-553A42FCC23E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B418F48C-DE8C-4E1A-96EF-02B485805560}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B418F48C-DE8C-4E1A-96EF-02B485805560}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B418F48C-DE8C-4E1A-96EF-02B485805560}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B418F48C-DE8C-4E1A-96EF-02B485805560}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52DA5F33-9527-4636-9FEC-553A42FCC23E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52DA5F33-9527-4636-9FEC-553A42FCC23E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52DA5F33-9527-4636-9FEC-553A42FCC23E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52DA5F33-9527-4636-9FEC-553A42FCC23E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {1130048A-2C71-4078-8B86-AB89D78F5C65}
+		SolutionGuid = {5D4FFE21-BA7C-492E-89B2-B5E242A9A80F}
 	EndGlobalSection
 EndGlobal
