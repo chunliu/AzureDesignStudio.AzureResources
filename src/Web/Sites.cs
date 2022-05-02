@@ -42,7 +42,7 @@ namespace AzureDesignStudio.AzureResources.Web
         [JsonPropertyName("properties")]
         public SiteProperties Properties { get; set; }
         [JsonPropertyName("resources")]
-        public IList<SitesBasicPublishingCredentialsPolicies> Resources { get; set; }
+        public IList<ResourceBase> Resources { get; set; }
 
         [Required]
         [JsonPropertyName("type")]
