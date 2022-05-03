@@ -19,5 +19,18 @@ namespace AzureDesignStudio.AzureResources.Web
         [Required]
         [JsonPropertyName("type")]
         public override string Type => "Microsoft.Web/sites/basicPublishingCredentialsPolicies";
+
+        /// <summary>
+        /// Kind of resource.
+        /// </summary>
+        [JsonPropertyName("kind")]
+        public string Kind { get; set; }
+
+        /// <summary>
+        /// CsmPublishingCredentialsPoliciesEntity resource specific properties
+        /// </summary>
+        [Required]
+        [JsonPropertyName("properties")]
+        public CsmPublishingCredentialsPoliciesEntityProperties Properties { get; set; }
     }
 }

@@ -19,5 +19,18 @@ namespace AzureDesignStudio.AzureResources.Web
         [Required]
         [JsonPropertyName("type")]
         public override string Type => "Microsoft.Web/sites/config";
+
+        /// <summary>
+        /// Kind of resource.
+        /// </summary>
+        [JsonPropertyName("kind")]
+        public string Kind { get; set; }
+
+        /// <summary>
+        /// Settings.
+        /// </summary>
+        [Required]
+        [JsonPropertyName("properties")]
+        public object Properties { get; set; }
     }
 }

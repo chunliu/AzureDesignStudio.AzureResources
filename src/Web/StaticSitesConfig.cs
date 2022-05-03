@@ -1,5 +1,6 @@
 using System;
 using System.CodeDom.Compiler;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
 using AzureDesignStudio.AzureResources.Base;
@@ -19,5 +20,18 @@ namespace AzureDesignStudio.AzureResources.Web
         [Required]
         [JsonPropertyName("type")]
         public override string Type => "Microsoft.Web/staticSites/config";
+
+        /// <summary>
+        /// Kind of resource.
+        /// </summary>
+        [JsonPropertyName("kind")]
+        public string Kind { get; set; }
+
+        /// <summary>
+        /// Settings.
+        /// </summary>
+        [Required]
+        [JsonPropertyName("properties")]
+        public IDictionary<string, string> Properties { get; set; }
     }
 }
