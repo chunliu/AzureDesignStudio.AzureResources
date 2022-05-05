@@ -1,3 +1,5 @@
+// Licensed under the MIT License.  See LICENSE in the project root for license information.
+
 using System;
 using System.CodeDom.Compiler;
 using System.Collections.Generic;
@@ -9,7 +11,7 @@ namespace AzureDesignStudio.AzureResources.Storage
     /// <summary>
     /// An object that defines the blob inventory rule filter conditions. For 'Blob' definition.objectType all filter properties are applicable, 'blobTypes' is required and others are optional. For 'Container' definition.objectType only prefixMatch is applicable and is optional.
     /// </summary>
-    [GeneratedCode("Microsoft.Json.Schema.ToDotNet", "1.1.3.0")]
+    [GeneratedCode("ArmTypeGenerator", "0.1.8.0")]
     public partial class BlobInventoryPolicyFilter
     {
         /// <summary>

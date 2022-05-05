@@ -1,3 +1,5 @@
+// Licensed under the MIT License.  See LICENSE in the project root for license information.
+
 using System;
 using System.CodeDom.Compiler;
 using System.Collections.Generic;
@@ -10,7 +12,7 @@ namespace AzureDesignStudio.AzureResources.Network
     /// <summary>
     /// AddressSpace contains an array of IP address ranges that can be used by subnets of the virtual network.
     /// </summary>
-    [GeneratedCode("Microsoft.Json.Schema.ToDotNet", "1.1.3.0")]
+    [GeneratedCode("ArmTypeGenerator", "0.1.8.0")]
     public partial class AddressSpace
     {
         /// <summary>

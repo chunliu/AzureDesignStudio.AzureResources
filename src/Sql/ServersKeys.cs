@@ -1,3 +1,5 @@
+// Licensed under the MIT License.  See LICENSE in the project root for license information.
+
 using System;
 using System.CodeDom.Compiler;
 using System.ComponentModel.DataAnnotations;
@@ -9,7 +11,7 @@ namespace AzureDesignStudio.AzureResources.Sql
     /// <summary>
     /// Microsoft.Sql/servers/keys
     /// </summary>
-    [GeneratedCode("Microsoft.Json.Schema.ToDotNet", "1.1.3.0")]
+    [GeneratedCode("ArmTypeGenerator", "0.1.8.0")]
     public partial class ServersKeys : ResourceBase
     {
         [Required]

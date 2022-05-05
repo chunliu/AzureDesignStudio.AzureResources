@@ -1,3 +1,5 @@
+// Licensed under the MIT License.  See LICENSE in the project root for license information.
+
 using System;
 using System.CodeDom.Compiler;
 using System.Text.Json.Serialization;
@@ -8,7 +10,7 @@ namespace AzureDesignStudio.AzureResources.Storage
     /// <summary>
     /// Routing preference defines the type of network, either microsoft or internet routing to be used to deliver the user data, the default option is microsoft routing
     /// </summary>
-    [GeneratedCode("Microsoft.Json.Schema.ToDotNet", "1.1.3.0")]
+    [GeneratedCode("ArmTypeGenerator", "0.1.8.0")]
     public partial class RoutingPreference
     {
         /// <summary>
