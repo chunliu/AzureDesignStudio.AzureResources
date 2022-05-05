@@ -1,0 +1,12 @@
+﻿schema: https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#
+contentVersion: 1.0.0.0
+resources:
+- properties:
+    addressSpace:
+      addressPrefixes:
+      - 10.0.0.0/16
+  location: eastus
+  name: Hello-vnet
+- properties:
+    addressPrefix: 10.0.0.0/24
+  name: Hello-vnet/subnet1

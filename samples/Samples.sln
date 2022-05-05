@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VnetBicep", "VnetBicep\Vnet
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{8DDC58A1-7BC3-4FC4-B097-7281C65F5500}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VnetYaml", "VnetYaml\VnetYaml.csproj", "{7A3B757A-9074-48FC-A9FB-4963AD08584E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{8DDC58A1-7BC3-4FC4-B097-7281C65F5500}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8DDC58A1-7BC3-4FC4-B097-7281C65F5500}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DDC58A1-7BC3-4FC4-B097-7281C65F5500}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A3B757A-9074-48FC-A9FB-4963AD08584E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A3B757A-9074-48FC-A9FB-4963AD08584E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A3B757A-9074-48FC-A9FB-4963AD08584E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A3B757A-9074-48FC-A9FB-4963AD08584E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
