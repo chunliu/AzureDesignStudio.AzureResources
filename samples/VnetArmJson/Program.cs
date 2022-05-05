@@ -3,7 +3,7 @@ using AzureDesignStudio.AzureResources.Network;
 using System.Text.Encodings.Web;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-using VnetBicep;
+using Shared;
 
 VirtualNetworks vnet = new()
 {
@@ -43,13 +43,4 @@ var template = JsonSerializer.Serialize(deploymentTemplate,
         Converters = { new ResourceBaseJsonConverter() }
     });
 
-var bicep = BicepDecompiler.Decompile(template);
-
-if (!string.IsNullOrEmpty(bicep.Error))
-{
-    Console.WriteLine(bicep.Error);
-}
-else
-{
-    Console.Write(bicep.BicepFile);
-}
+Console.Write(template);

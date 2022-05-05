@@ -2,9 +2,9 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace VnetBicep
+namespace Shared
 {
-    internal class ResourceBaseJsonConverter : JsonConverter<ResourceBase>
+    public class ResourceBaseJsonConverter : JsonConverter<ResourceBase>
     {
         public override ResourceBase Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
             => throw new NotImplementedException();

@@ -7,16 +7,16 @@ using Bicep.Decompiler;
 using System.Collections.Immutable;
 using IOFileSystem = System.IO.Abstractions.FileSystem;
 
-namespace VnetBicep
+namespace Shared
 {
-    internal record DecompileResult(string? BicepFile, string? Error);
+    public record DecompileResult(string? BicepFile, string? Error);
 
-    internal class EmptyModuleRegistryProvider : IModuleRegistryProvider
+    public class EmptyModuleRegistryProvider : IModuleRegistryProvider
     {
         public ImmutableArray<IModuleRegistry> Registries => ImmutableArray<IModuleRegistry>.Empty;
     }
 
-    internal class BicepDecompiler
+    public class BicepDecompiler
     {
         private static readonly IFeatureProvider features = new FeatureProvider();
 

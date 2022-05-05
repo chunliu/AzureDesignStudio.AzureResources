@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VnetArmJson", "VnetArmJson\VnetArmJson.csproj", "{E1508190-56CC-4BD8-BC34-D381DF1E01E2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VnetBicep", "VnetBicep\VnetBicep.csproj", "{9ABF309D-5524-4827-9256-1977E3F31273}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{8DDC58A1-7BC3-4FC4-B097-7281C65F5500}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E1508190-56CC-4BD8-BC34-D381DF1E01E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1508190-56CC-4BD8-BC34-D381DF1E01E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1508190-56CC-4BD8-BC34-D381DF1E01E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1508190-56CC-4BD8-BC34-D381DF1E01E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ABF309D-5524-4827-9256-1977E3F31273}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ABF309D-5524-4827-9256-1977E3F31273}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ABF309D-5524-4827-9256-1977E3F31273}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ABF309D-5524-4827-9256-1977E3F31273}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DDC58A1-7BC3-4FC4-B097-7281C65F5500}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DDC58A1-7BC3-4FC4-B097-7281C65F5500}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DDC58A1-7BC3-4FC4-B097-7281C65F5500}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DDC58A1-7BC3-4FC4-B097-7281C65F5500}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {84A797A8-A20A-484E-9F59-3729BB4EA47A}
+	EndGlobalSection
+EndGlobal

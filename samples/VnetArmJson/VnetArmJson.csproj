@@ -8,8 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Azure.Bicep.Decompiler" Version="0.5.6" />
-    <PackageReference Include="AzureDesignStudio.AzureResources.Network" Version="0.3.0" />
+    <PackageReference Include="AzureDesignStudio.AzureResources.Network" Version="0.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Shared\Shared.csproj" />
   </ItemGroup>
 
 </Project>
