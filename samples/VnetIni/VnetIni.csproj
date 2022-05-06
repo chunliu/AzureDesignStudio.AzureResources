@@ -9,7 +9,7 @@
 
   <ItemGroup>
     <PackageReference Include="AzureDesignStudio.AzureResources.Network" Version="0.3.1" />
-    <PackageReference Include="YamlDotNet" Version="11.2.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Ini" Version="6.0.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Vnet.yaml">
+    <None Update="VnetIni.ini">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
