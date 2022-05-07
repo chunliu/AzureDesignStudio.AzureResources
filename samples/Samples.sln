@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VnetBicep", "VnetBicep\Vnet
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "Shared\Shared.csproj", "{8DDC58A1-7BC3-4FC4-B097-7281C65F5500}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VnetIni", "VnetIni\VnetIni.csproj", "{7330825D-2DBA-463B-9845-359D3E440C11}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VnetIni", "VnetIni\VnetIni.csproj", "{7330825D-2DBA-463B-9845-359D3E440C11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateVnetOnAzure", "CreateVnetOnAzure\CreateVnetOnAzure.csproj", "{13C2B002-616B-4C28-925B-9BB40C9C778A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{7330825D-2DBA-463B-9845-359D3E440C11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7330825D-2DBA-463B-9845-359D3E440C11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7330825D-2DBA-463B-9845-359D3E440C11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13C2B002-616B-4C28-925B-9BB40C9C778A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13C2B002-616B-4C28-925B-9BB40C9C778A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13C2B002-616B-4C28-925B-9BB40C9C778A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13C2B002-616B-4C28-925B-9BB40C9C778A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
