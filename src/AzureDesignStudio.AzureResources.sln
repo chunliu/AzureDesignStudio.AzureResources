@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureDesignStudio.AzureReso
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureDesignStudio.AzureResources.Storage", "Storage\AzureDesignStudio.AzureResources.Storage.csproj", "{EF6739E1-C077-4FA3-A94E-BABFC4DA8589}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureDesignStudio.AzureResources.ApiManagement", "ApiManagement\AzureDesignStudio.AzureResources.ApiManagement.csproj", "{F213A1D3-18BC-4959-8EA3-C4F9B70D646E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{EF6739E1-C077-4FA3-A94E-BABFC4DA8589}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF6739E1-C077-4FA3-A94E-BABFC4DA8589}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF6739E1-C077-4FA3-A94E-BABFC4DA8589}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F213A1D3-18BC-4959-8EA3-C4F9B70D646E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F213A1D3-18BC-4959-8EA3-C4F9B70D646E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F213A1D3-18BC-4959-8EA3-C4F9B70D646E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F213A1D3-18BC-4959-8EA3-C4F9B70D646E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
