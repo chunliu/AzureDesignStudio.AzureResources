@@ -21,5 +21,12 @@ namespace AzureDesignStudio.AzureResources.ApiManagement
         [Required]
         [JsonPropertyName("type")]
         public override string Type => "Microsoft.ApiManagement/service/portalsettings";
+
+        /// <summary>
+        /// Sign-in settings contract properties.
+        /// </summary>
+        [Required]
+        [JsonPropertyName("properties")]
+        public PortalSigninSettingProperties Properties { get; set; }
     }
 }

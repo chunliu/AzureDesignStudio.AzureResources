@@ -3,7 +3,6 @@
 using System;
 using System.CodeDom.Compiler;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
 using AzureDesignStudio.AzureResources.Base;
 
@@ -13,7 +12,7 @@ namespace AzureDesignStudio.AzureResources.Network
     /// Rule of type nat.
     /// </summary>
     [GeneratedCode("ArmTypeGenerator", "0.1.8.0")]
-    public partial class NatRule
+    public partial class NatRule : FirewallPolicyRule
     {
         /// <summary>
         /// Array of FirewallPolicyRuleNetworkProtocols.
@@ -62,8 +61,5 @@ namespace AzureDesignStudio.AzureResources.Network
         /// </summary>
         [JsonPropertyName("translatedFqdn")]
         public string TranslatedFqdn { get; set; }
-        [Required]
-        [JsonPropertyName("ruleType")]
-        public string RuleType { get; set; }
     }
 }

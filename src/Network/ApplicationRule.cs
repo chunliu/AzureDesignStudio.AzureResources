@@ -3,7 +3,6 @@
 using System;
 using System.CodeDom.Compiler;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
 using AzureDesignStudio.AzureResources.Base;
 
@@ -13,7 +12,7 @@ namespace AzureDesignStudio.AzureResources.Network
     /// Rule of type application.
     /// </summary>
     [GeneratedCode("ArmTypeGenerator", "0.1.8.0")]
-    public partial class ApplicationRule
+    public partial class ApplicationRule : FirewallPolicyRule
     {
         /// <summary>
         /// List of source IP addresses for this rule.
@@ -68,8 +67,5 @@ namespace AzureDesignStudio.AzureResources.Network
         /// </summary>
         [JsonPropertyName("webCategories")]
         public IList<string> WebCategories { get; set; }
-        [Required]
-        [JsonPropertyName("ruleType")]
-        public string RuleType { get; set; }
     }
 }

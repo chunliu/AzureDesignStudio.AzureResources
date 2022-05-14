@@ -3,7 +3,6 @@
 using System;
 using System.CodeDom.Compiler;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
 using AzureDesignStudio.AzureResources.Base;
 
@@ -13,7 +12,7 @@ namespace AzureDesignStudio.AzureResources.Network
     /// Rule of type network.
     /// </summary>
     [GeneratedCode("ArmTypeGenerator", "0.1.8.0")]
-    public partial class NetworkRule
+    public partial class NetworkRule : FirewallPolicyRule
     {
         /// <summary>
         /// Array of FirewallPolicyRuleNetworkProtocols.
@@ -56,8 +55,5 @@ namespace AzureDesignStudio.AzureResources.Network
         /// </summary>
         [JsonPropertyName("destinationFqdns")]
         public IList<string> DestinationFqdns { get; set; }
-        [Required]
-        [JsonPropertyName("ruleType")]
-        public string RuleType { get; set; }
     }
 }
