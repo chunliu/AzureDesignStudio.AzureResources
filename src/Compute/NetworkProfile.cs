@@ -18,7 +18,7 @@ namespace AzureDesignStudio.AzureResources.Compute
         /// specifies the Microsoft.Network API version used when creating networking resources in the Network Interface Configurations.
         /// </summary>
         [JsonPropertyName("networkApiVersion")]
-        public string NetworkApiVersion { get; set; }
+        public string NetworkApiVersion => "2020-11-01";
 
         /// <summary>
         /// Specifies the networking configurations that will be used to create the virtual machine networking resources.

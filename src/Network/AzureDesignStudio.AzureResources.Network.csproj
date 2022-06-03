@@ -7,6 +7,7 @@
     <Authors>Chun Liu</Authors>
 	<VersionPrefix>0.3.2</VersionPrefix>
 	<RepositoryUrl>https://github.com/chunliu/AzureDesignStudio.AzureResources</RepositoryUrl>
+	  <Description>Microsoft.Network, ApiVersion: 2020-11-01</Description>
   </PropertyGroup>
 
   <ItemGroup>

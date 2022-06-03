@@ -7,6 +7,7 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
 	<VersionPrefix>0.2.1</VersionPrefix>
 	<RepositoryUrl>https://github.com/chunliu/AzureDesignStudio.AzureResources</RepositoryUrl>
+	  <Description>Microsoft.Sql, ApiVersion: 2021-02-01-preview</Description>
   </PropertyGroup>
 
   <ItemGroup>
