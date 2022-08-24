@@ -20,6 +20,12 @@ namespace AzureDesignStudio.AzureResources.Compute
         public InstanceViewStatus ColocationStatus { get; set; }
 
         /// <summary>
+        /// Specifies the user intent of the proximity placement group.
+        /// </summary>
+        [JsonPropertyName("intent")]
+        public ProximityPlacementGroupPropertiesIntent Intent { get; set; }
+
+        /// <summary>
         /// Specifies the type of the proximity placement group. <br><br> Possible values are: <br><br> **Standard** : Co-locate resources within an Azure region or Availability Zone. <br><br> **Ultra** : For future use.
         /// </summary>
         [JsonPropertyName("proximityPlacementGroupType")]

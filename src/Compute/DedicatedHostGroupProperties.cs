@@ -15,6 +15,12 @@ namespace AzureDesignStudio.AzureResources.Compute
     public partial class DedicatedHostGroupProperties
     {
         /// <summary>
+        /// Enables or disables a capability on the dedicated host group.<br><br>Minimum api-version: 2022-03-01.
+        /// </summary>
+        [JsonPropertyName("additionalCapabilities")]
+        public DedicatedHostGroupPropertiesAdditionalCapabilities AdditionalCapabilities { get; set; }
+
+        /// <summary>
         /// Number of fault domains that the host group can span.
         /// </summary>
         [Required]

@@ -16,7 +16,7 @@ namespace AzureDesignStudio.AzureResources.ApiManagement
     {
         [Required]
         [JsonPropertyName("apiVersion")]
-        public override string ApiVersion => "2021-04-01-preview";
+        public override string ApiVersion => "2021-12-01-preview";
 
         /// <summary>
         /// The Logger entity in API Management represents an event sink that you can use to log API Management events. Currently the Logger entity supports logging API Management events to Azure Event Hubs.

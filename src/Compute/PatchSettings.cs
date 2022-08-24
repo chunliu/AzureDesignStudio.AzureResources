@@ -20,6 +20,12 @@ namespace AzureDesignStudio.AzureResources.Compute
         public string AssessmentMode { get; set; }
 
         /// <summary>
+        /// Specifies additional settings to be applied when patch mode AutomaticByPlatform is selected in Windows patch settings.
+        /// </summary>
+        [JsonPropertyName("automaticByPlatformSettings")]
+        public WindowsVMGuestPatchAutomaticByPlatformSettings AutomaticByPlatformSettings { get; set; }
+
+        /// <summary>
         /// Enables customers to patch their Azure VMs without requiring a reboot. For enableHotpatching, the 'provisionVMAgent' must be set to true and 'patchMode' must be set to 'AutomaticByPlatform'.
         /// </summary>
         [JsonPropertyName("enableHotpatching")]

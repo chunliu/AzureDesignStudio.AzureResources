@@ -14,6 +14,12 @@ namespace AzureDesignStudio.AzureResources.Sql
     public partial class ElasticPoolProperties
     {
         /// <summary>
+        /// The number of secondary replicas associated with the elastic pool that are used to provide high availability. Applicable only to Hyperscale elastic pools.
+        /// </summary>
+        [JsonPropertyName("highAvailabilityReplicaCount")]
+        public int HighAvailabilityReplicaCount { get; set; }
+
+        /// <summary>
         /// The license type to apply for this elastic pool.
         /// </summary>
         [JsonPropertyName("licenseType")]
@@ -30,6 +36,12 @@ namespace AzureDesignStudio.AzureResources.Sql
         /// </summary>
         [JsonPropertyName("maxSizeBytes")]
         public int MaxSizeBytes { get; set; }
+
+        /// <summary>
+        /// Minimal capacity that serverless pool will not shrink below, if not paused
+        /// </summary>
+        [JsonPropertyName("minCapacity")]
+        public double MinCapacity { get; set; }
 
         /// <summary>
         /// Per database settings of an elastic pool.

@@ -74,7 +74,13 @@ namespace AzureDesignStudio.AzureResources.Sql
         public string SourceDatabaseId { get; set; }
 
         /// <summary>
-        /// Conditional. If createMode is RestoreExternalBackup, this value is required. Specifies the storage container sas token.
+        /// Conditional. If createMode is RestoreExternalBackup, this value is used. Specifies the identity used for storage container authentication. Can be 'SharedAccessSignature' or 'ManagedIdentity'; if not specified 'SharedAccessSignature' is assumed.
+        /// </summary>
+        [JsonPropertyName("storageContainerIdentity")]
+        public string StorageContainerIdentity { get; set; }
+
+        /// <summary>
+        /// Conditional. If createMode is RestoreExternalBackup and storageContainerIdentity is not ManagedIdentity, this value is required. Specifies the storage container sas token.
         /// </summary>
         [JsonPropertyName("storageContainerSasToken")]
         public string StorageContainerSasToken { get; set; }

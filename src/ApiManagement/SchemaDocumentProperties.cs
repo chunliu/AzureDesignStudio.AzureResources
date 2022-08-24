@@ -8,19 +8,19 @@ using AzureDesignStudio.AzureResources.Base;
 namespace AzureDesignStudio.AzureResources.ApiManagement
 {
     /// <summary>
-    /// Schema Document Properties.
+    /// Api Schema Document Properties.
     /// </summary>
     [GeneratedCode("ArmTypeGenerator", "0.1.8.0")]
     public partial class SchemaDocumentProperties
     {
         /// <summary>
-        /// Types definitions. Used for OpenAPI v3 schemas only, null otherwise.
+        /// Types definitions. Used for Swagger/OpenAPI v2/v3 schemas only, null otherwise.
         /// </summary>
         [JsonPropertyName("components")]
         public object Components { get; set; }
 
         /// <summary>
-        /// Types definitions. Used for OpenAPI v2 (Swagger) schemas only, null otherwise.
+        /// Types definitions. Used for Swagger/OpenAPI v1 schemas only, null otherwise.
         /// </summary>
         [JsonPropertyName("definitions")]
         public object Definitions { get; set; }

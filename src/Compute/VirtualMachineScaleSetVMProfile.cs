@@ -50,6 +50,12 @@ namespace AzureDesignStudio.AzureResources.Compute
         public VirtualMachineScaleSetExtensionProfile ExtensionProfile { get; set; }
 
         /// <summary>
+        /// Specifies the hardware settings for the virtual machine scale set.
+        /// </summary>
+        [JsonPropertyName("hardwareProfile")]
+        public VirtualMachineScaleSetHardwareProfile HardwareProfile { get; set; }
+
+        /// <summary>
         /// Specifies that the image or disk that is being used was licensed on-premises. <br><br> Possible values for Windows Server operating system are: <br><br> Windows_Client <br><br> Windows_Server <br><br> Possible values for Linux Server operating system are: <br><br> RHEL_BYOS (for RHEL) <br><br> SLES_BYOS (for SUSE) <br><br> For more information, see [Azure Hybrid Use Benefit for Windows Server](https://docs.microsoft.com/azure/virtual-machines/windows/hybrid-use-benefit-licensing) <br><br> [Azure Hybrid Use Benefit for Linux Server](https://docs.microsoft.com/azure/virtual-machines/linux/azure-hybrid-benefit-linux) <br><br> Minimum api-version: 2015-06-15
         /// </summary>
         [JsonPropertyName("licenseType")]

@@ -14,7 +14,7 @@ namespace AzureDesignStudio.AzureResources.Storage
     public partial class EncryptionService
     {
         /// <summary>
-        /// A boolean indicating whether or not the service encrypts the data as it is stored.
+        /// A boolean indicating whether or not the service encrypts the data as it is stored. Encryption at rest is enabled by default today and cannot be disabled.
         /// </summary>
         [JsonPropertyName("enabled")]
         public bool Enabled { get; set; }

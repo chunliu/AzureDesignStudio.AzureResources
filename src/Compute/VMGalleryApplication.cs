@@ -21,6 +21,12 @@ namespace AzureDesignStudio.AzureResources.Compute
         public string ConfigurationReference { get; set; }
 
         /// <summary>
+        /// If set to true, when a new Gallery Application version is available in PIR/SIG, it will be automatically updated for the VM/VMSS
+        /// </summary>
+        [JsonPropertyName("enableAutomaticUpgrade")]
+        public bool EnableAutomaticUpgrade { get; set; }
+
+        /// <summary>
         /// Optional, Specifies the order in which the packages have to be installed
         /// </summary>
         [JsonPropertyName("order")]
@@ -38,5 +44,11 @@ namespace AzureDesignStudio.AzureResources.Compute
         /// </summary>
         [JsonPropertyName("tags")]
         public string Tags { get; set; }
+
+        /// <summary>
+        /// Optional, If true, any failure for any operation in the VmApplication will fail the deployment
+        /// </summary>
+        [JsonPropertyName("treatFailureAsDeploymentFailure")]
+        public bool TreatFailureAsDeploymentFailure { get; set; }
     }
 }

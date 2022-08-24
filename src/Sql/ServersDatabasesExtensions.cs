@@ -16,10 +16,10 @@ namespace AzureDesignStudio.AzureResources.Sql
     {
         [Required]
         [JsonPropertyName("apiVersion")]
-        public override string ApiVersion => "2021-02-01-preview";
+        public override string ApiVersion => "2022-02-01-preview";
 
         /// <summary>
-        /// Contains the database information after successful export.
+        /// Contains the database information after a successful Import, Export, or PolybaseImport
         /// </summary>
         [Required]
         [JsonPropertyName("properties")]

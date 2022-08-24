@@ -20,6 +20,12 @@ namespace AzureDesignStudio.AzureResources.Compute
         public string AssessmentMode { get; set; }
 
         /// <summary>
+        /// Specifies additional settings to be applied when patch mode AutomaticByPlatform is selected in Linux patch settings.
+        /// </summary>
+        [JsonPropertyName("automaticByPlatformSettings")]
+        public LinuxVMGuestPatchAutomaticByPlatformSettings AutomaticByPlatformSettings { get; set; }
+
+        /// <summary>
         /// Specifies the mode of VM Guest Patching to IaaS virtual machine or virtual machines associated to virtual machine scale set with OrchestrationMode as Flexible.<br /><br /> Possible values are:<br /><br /> **ImageDefault** - The virtual machine's default patching configuration is used. <br /><br /> **AutomaticByPlatform** - The virtual machine will be automatically updated by the platform. The property provisionVMAgent must be true.
         /// </summary>
         [JsonPropertyName("patchMode")]

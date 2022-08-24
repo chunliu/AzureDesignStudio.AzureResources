@@ -20,7 +20,7 @@ namespace AzureDesignStudio.AzureResources.Compute
         public bool EncryptionAtHost { get; set; }
 
         /// <summary>
-        /// Specifies the SecurityType of the virtual machine. It is set as TrustedLaunch to enable UefiSettings. <br><br> Default: UefiSettings will not be enabled unless this property is set as TrustedLaunch.
+        /// Specifies the SecurityType of the virtual machine. It has to be set to any specified value to enable UefiSettings. <br><br> Default: UefiSettings will not be enabled unless this property is set.
         /// </summary>
         [JsonPropertyName("securityType")]
         public string SecurityType { get; set; }

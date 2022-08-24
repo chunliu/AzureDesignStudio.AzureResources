@@ -44,7 +44,13 @@ namespace AzureDesignStudio.AzureResources.Sql
         public string ElasticPoolId { get; set; }
 
         /// <summary>
-        /// The number of secondary replicas associated with the database that are used to provide high availability.
+        /// The Client id used for cross tenant per database CMK scenario
+        /// </summary>
+        [JsonPropertyName("federatedClientId")]
+        public string FederatedClientId { get; set; }
+
+        /// <summary>
+        /// The number of secondary replicas associated with the database that are used to provide high availability. Not applicable to a Hyperscale database within an elastic pool.
         /// </summary>
         [JsonPropertyName("highAvailabilityReplicaCount")]
         public int HighAvailabilityReplicaCount { get; set; }
@@ -86,7 +92,7 @@ namespace AzureDesignStudio.AzureResources.Sql
         public double MinCapacity { get; set; }
 
         /// <summary>
-        /// The state of read-only routing. If enabled, connections that have application intent set to readonly in their connection string may be routed to a readonly secondary replica in the same region.
+        /// The state of read-only routing. If enabled, connections that have application intent set to readonly in their connection string may be routed to a readonly secondary replica in the same region. Not applicable to a Hyperscale database within an elastic pool.
         /// </summary>
         [JsonPropertyName("readScale")]
         public string ReadScale { get; set; }
@@ -128,7 +134,7 @@ namespace AzureDesignStudio.AzureResources.Sql
         public string SampleName { get; set; }
 
         /// <summary>
-        /// The secondary type of the database if it is a secondary.  Valid values are Geo and Named.
+        /// The secondary type of the database if it is a secondary.  Valid values are Geo, Named and Standby.
         /// </summary>
         [JsonPropertyName("secondaryType")]
         public string SecondaryType { get; set; }
@@ -144,6 +150,12 @@ namespace AzureDesignStudio.AzureResources.Sql
         /// </summary>
         [JsonPropertyName("sourceDatabaseId")]
         public string SourceDatabaseId { get; set; }
+
+        /// <summary>
+        /// The resource identifier of the source associated with the create operation of this database.
+
+        [JsonPropertyName("sourceResourceId")]
+        public string SourceResourceId { get; set; }
 
         /// <summary>
         /// Whether or not this database is zone redundant, which means the replicas of this database will be spread across multiple availability zones.

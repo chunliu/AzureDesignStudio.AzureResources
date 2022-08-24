@@ -16,7 +16,7 @@ namespace AzureDesignStudio.AzureResources.Compute
     {
         [Required]
         [JsonPropertyName("apiVersion")]
-        public override string ApiVersion => "2021-07-01";
+        public override string ApiVersion => "2022-03-01";
 
         /// <summary>
         /// The restore point properties.

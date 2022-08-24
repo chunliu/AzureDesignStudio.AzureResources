@@ -16,7 +16,7 @@ namespace AzureDesignStudio.AzureResources.Web
     {
         [Required]
         [JsonPropertyName("apiVersion")]
-        public override string ApiVersion => "2021-02-01";
+        public override string ApiVersion => "2022-03-01";
 
         /// <summary>
         /// Extended Location.

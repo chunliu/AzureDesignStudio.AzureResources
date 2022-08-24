@@ -14,7 +14,7 @@ namespace AzureDesignStudio.AzureResources.Storage
     public partial class StorageAccountPropertiesCreateParameters
     {
         /// <summary>
-        /// Required for storage accounts where kind = BlobStorage. The access tier used for billing.
+        /// Required for storage accounts where kind = BlobStorage. The access tier is used for billing. The 'Premium' access tier is the default value for premium block blobs storage account type and it cannot be changed for the premium block blobs storage account type.
         /// </summary>
         [JsonPropertyName("accessTier")]
         public string AccessTier { get; set; }
@@ -30,6 +30,12 @@ namespace AzureDesignStudio.AzureResources.Storage
         /// </summary>
         [JsonPropertyName("allowCrossTenantReplication")]
         public bool AllowCrossTenantReplication { get; set; }
+
+        /// <summary>
+        /// Restrict copy to and from Storage Accounts within an AAD tenant or with Private Links to the same VNet.
+        /// </summary>
+        [JsonPropertyName("allowedCopyScope")]
+        public string AllowedCopyScope { get; set; }
 
         /// <summary>
         /// Indicates whether the storage account permits requests to be authorized with the account access key via Shared Key. If false, then all requests, including shared access signatures, must be authorized with Azure Active Directory (Azure AD). The default value is null, which is equivalent to true.
@@ -56,6 +62,12 @@ namespace AzureDesignStudio.AzureResources.Storage
         public bool DefaultToOAuthAuthentication { get; set; }
 
         /// <summary>
+        /// Allows you to specify the type of endpoint. Set this to AzureDNSZone to create a large number of accounts in a single subscription, which creates accounts in an Azure DNS Zone and the endpoint URL will have an alphanumeric DNS Zone identifier.
+        /// </summary>
+        [JsonPropertyName("dnsEndpointType")]
+        public string DnsEndpointType { get; set; }
+
+        /// <summary>
         /// The encryption settings on the storage account.
         /// </summary>
         [JsonPropertyName("encryption")]
@@ -74,10 +86,22 @@ namespace AzureDesignStudio.AzureResources.Storage
         public bool IsHnsEnabled { get; set; }
 
         /// <summary>
+        /// Enables local users feature, if set to true
+        /// </summary>
+        [JsonPropertyName("isLocalUserEnabled")]
+        public bool IsLocalUserEnabled { get; set; }
+
+        /// <summary>
         /// NFS 3.0 protocol support enabled if set to true.
         /// </summary>
         [JsonPropertyName("isNfsV3Enabled")]
         public bool IsNfsV3Enabled { get; set; }
+
+        /// <summary>
+        /// Enables Secure File Transfer Protocol, if set to true
+        /// </summary>
+        [JsonPropertyName("isSftpEnabled")]
+        public bool IsSftpEnabled { get; set; }
 
         /// <summary>
         /// KeyPolicy assigned to the storage account.

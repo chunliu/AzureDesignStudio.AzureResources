@@ -5,13 +5,13 @@ using System.CodeDom.Compiler;
 using System.Text.Json.Serialization;
 using AzureDesignStudio.AzureResources.Base;
 
-namespace AzureDesignStudio.AzureResources.Sql
+namespace AzureDesignStudio.AzureResources.Compute
 {
     /// <summary>
-    /// The properties of an outbound firewall rule.
+    /// The system meta data relating to this resource.
     /// </summary>
     [GeneratedCode("ArmTypeGenerator", "0.1.8.0")]
-    public partial class OutboundFirewallRuleProperties
+    public partial class SystemData
     {
     }
 }

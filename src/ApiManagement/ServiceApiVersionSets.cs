@@ -16,7 +16,7 @@ namespace AzureDesignStudio.AzureResources.ApiManagement
     {
         [Required]
         [JsonPropertyName("apiVersion")]
-        public override string ApiVersion => "2021-04-01-preview";
+        public override string ApiVersion => "2021-12-01-preview";
 
         /// <summary>
         /// Properties of an API Version Set.

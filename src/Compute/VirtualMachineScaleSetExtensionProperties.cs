@@ -39,6 +39,12 @@ namespace AzureDesignStudio.AzureResources.Compute
         public object ProtectedSettings { get; set; }
 
         /// <summary>
+        /// The extensions protected settings that are passed by reference, and consumed from key vault
+        /// </summary>
+        [JsonPropertyName("protectedSettingsFromKeyVault")]
+        public object ProtectedSettingsFromKeyVault { get; set; }
+
+        /// <summary>
         /// Collection of extension names after which this extension needs to be provisioned.
         /// </summary>
         [JsonPropertyName("provisionAfterExtensions")]

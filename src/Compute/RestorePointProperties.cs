@@ -15,9 +15,27 @@ namespace AzureDesignStudio.AzureResources.Compute
     public partial class RestorePointProperties
     {
         /// <summary>
+        /// ConsistencyMode of the RestorePoint. Can be specified in the input while creating a restore point. For now, only CrashConsistent is accepted as a valid input. Please refer to https://aka.ms/RestorePoints for more details.
+        /// </summary>
+        [JsonPropertyName("consistencyMode")]
+        public string ConsistencyMode { get; set; }
+
+        /// <summary>
         /// List of disk resource ids that the customer wishes to exclude from the restore point. If no disks are specified, all disks will be included.
         /// </summary>
         [JsonPropertyName("excludeDisks")]
         public IList<ApiEntityReference> ExcludeDisks { get; set; }
+
+        /// <summary>
+        /// The API entity reference.
+        /// </summary>
+        [JsonPropertyName("sourceRestorePoint")]
+        public ApiEntityReference SourceRestorePoint { get; set; }
+
+        /// <summary>
+        /// Gets the creation time of the restore point.
+        /// </summary>
+        [JsonPropertyName("timeCreated")]
+        public DateTime TimeCreated { get; set; }
     }
 }

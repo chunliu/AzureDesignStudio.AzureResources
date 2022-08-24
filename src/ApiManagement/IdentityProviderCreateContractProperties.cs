@@ -35,6 +35,12 @@ namespace AzureDesignStudio.AzureResources.ApiManagement
         public string ClientId { get; set; }
 
         /// <summary>
+        /// The client library to be used in the developer portal. Only applies to AAD and AAD B2C Identity Provider.
+        /// </summary>
+        [JsonPropertyName("clientLibrary")]
+        public string ClientLibrary { get; set; }
+
+        /// <summary>
         /// Client secret of the Application in external Identity Provider, used to authenticate login request. For example, it is App Secret for Facebook login, API Key for Google login, Public Key for Microsoft. This property will not be filled on 'GET' operations! Use '/listSecrets' POST request to get the value.
         /// </summary>
         [Required]

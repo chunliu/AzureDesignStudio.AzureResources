@@ -18,5 +18,23 @@ namespace AzureDesignStudio.AzureResources.Web
         /// </summary>
         [JsonPropertyName("allowNewPrivateEndpointConnections")]
         public bool AllowNewPrivateEndpointConnections { get; set; }
+
+        /// <summary>
+        /// Property to enable and disable FTP on ASEV3
+        /// </summary>
+        [JsonPropertyName("ftpEnabled")]
+        public bool FtpEnabled { get; set; }
+
+        /// <summary>
+        /// Customer provided Inbound IP Address. Only able to be set on Ase create.
+        /// </summary>
+        [JsonPropertyName("inboundIpAddressOverride")]
+        public string InboundIpAddressOverride { get; set; }
+
+        /// <summary>
+        /// Property to enable and disable Remote Debug on ASEV3
+        /// </summary>
+        [JsonPropertyName("remoteDebugEnabled")]
+        public bool RemoteDebugEnabled { get; set; }
     }
 }

@@ -16,7 +16,10 @@ namespace AzureDesignStudio.AzureResources.Storage
     {
         [Required]
         [JsonPropertyName("apiVersion")]
-        public override string ApiVersion => "2021-06-01";
+        public override string ApiVersion => "2021-09-01";
+
+        [JsonPropertyName("properties")]
+        public TableProperties Properties { get; set; }
 
         [Required]
         [JsonPropertyName("type")]

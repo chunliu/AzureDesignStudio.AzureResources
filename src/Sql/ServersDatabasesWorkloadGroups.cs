@@ -17,7 +17,7 @@ namespace AzureDesignStudio.AzureResources.Sql
     {
         [Required]
         [JsonPropertyName("apiVersion")]
-        public override string ApiVersion => "2021-02-01-preview";
+        public override string ApiVersion => "2022-02-01-preview";
 
         /// <summary>
         /// Workload group definition. For more information look at sys.workload_management_workload_groups (DMV).

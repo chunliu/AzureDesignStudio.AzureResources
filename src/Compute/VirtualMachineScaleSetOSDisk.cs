@@ -29,6 +29,12 @@ namespace AzureDesignStudio.AzureResources.Compute
         public string CreateOption { get; set; }
 
         /// <summary>
+        /// Specifies whether OS Disk should be deleted or detached upon VMSS Flex deletion (This feature is available for VMSS with Flexible OrchestrationMode only). <br><br> Possible values: <br><br> **Delete** If this value is used, the OS disk is deleted when VMSS Flex VM is deleted.<br><br> **Detach** If this value is used, the OS disk is retained after VMSS Flex VM is deleted. <br><br> The default value is set to **Delete**. For an Ephemeral OS Disk, the default value is set to **Delete**. User cannot change the delete option for Ephemeral OS Disk.
+        /// </summary>
+        [JsonPropertyName("deleteOption")]
+        public string DeleteOption { get; set; }
+
+        /// <summary>
         /// Describes the parameters of ephemeral disk settings that can be specified for operating system disk. <br><br> NOTE: The ephemeral disk settings can only be specified for managed disk.
         /// </summary>
         [JsonPropertyName("diffDiskSettings")]

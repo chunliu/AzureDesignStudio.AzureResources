@@ -3,11 +3,11 @@
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
-	  <VersionPrefix>0.1.1</VersionPrefix>
+	  <VersionPrefix>0.2.0</VersionPrefix>
 	  <Authors>Chun Liu</Authors>
 	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
 	  <RepositoryUrl>https://github.com/chunliu/AzureDesignStudio.AzureResources</RepositoryUrl>
-	  <Description>Microsoft.ApiManagement, ApiVersion: 2021-04-01-preview</Description>
+	  <Description>Microsoft.ApiManagement, ApiVersion: 2021-12-01-preview</Description>
   </PropertyGroup>
 
   <ItemGroup>

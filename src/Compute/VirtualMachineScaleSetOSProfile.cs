@@ -27,6 +27,12 @@ namespace AzureDesignStudio.AzureResources.Compute
         public string AdminUsername { get; set; }
 
         /// <summary>
+        /// Specifies whether extension operations should be allowed on the virtual machine scale set. <br><br>This may only be set to False when no extensions are present on the virtual machine scale set.
+        /// </summary>
+        [JsonPropertyName("allowExtensionOperations")]
+        public bool AllowExtensionOperations { get; set; }
+
+        /// <summary>
         /// Specifies the computer name prefix for all of the virtual machines in the scale set. Computer name prefixes must be 1 to 15 characters long.
         /// </summary>
         [JsonPropertyName("computerNamePrefix")]

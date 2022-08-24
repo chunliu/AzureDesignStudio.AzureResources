@@ -98,10 +98,22 @@ namespace AzureDesignStudio.AzureResources.Sql
         public bool PublicDataEndpointEnabled { get; set; }
 
         /// <summary>
+        /// The storage account type to be used to store backups for this instance. The options are Local (LocallyRedundantStorage), Zone (ZoneRedundantStorage), Geo (GeoRedundantStorage) and GeoZone(GeoZoneRedundantStorage).
+        /// </summary>
+        [JsonPropertyName("requestedBackupStorageRedundancy")]
+        public string RequestedBackupStorageRedundancy { get; set; }
+
+        /// <summary>
         /// Specifies the point in time (ISO8601 format) of the source database that will be restored to create the new database.
         /// </summary>
         [JsonPropertyName("restorePointInTime")]
         public DateTime RestorePointInTime { get; set; }
+
+        /// <summary>
+        /// The managed instance's service principal configuration for a resource.
+        /// </summary>
+        [JsonPropertyName("servicePrincipal")]
+        public ServicePrincipal ServicePrincipal { get; set; }
 
         /// <summary>
         /// The resource identifier of the source managed instance associated with create operation of this instance.
@@ -110,13 +122,7 @@ namespace AzureDesignStudio.AzureResources.Sql
         public string SourceManagedInstanceId { get; set; }
 
         /// <summary>
-        /// The storage account type used to store backups for this instance. The options are LRS (LocallyRedundantStorage), ZRS (ZoneRedundantStorage) and GRS (GeoRedundantStorage).
-        /// </summary>
-        [JsonPropertyName("storageAccountType")]
-        public string StorageAccountType { get; set; }
-
-        /// <summary>
-        /// Storage size in GB. Minimum value: 32. Maximum value: 8192. Increments of 32 GB allowed only.
+        /// Storage size in GB. Minimum value: 32. Maximum value: 16384. Increments of 32 GB allowed only. Maximum value depends on the selected hardware family and number of vCores.
         /// </summary>
         [JsonPropertyName("storageSizeInGB")]
         public int StorageSizeInGB { get; set; }

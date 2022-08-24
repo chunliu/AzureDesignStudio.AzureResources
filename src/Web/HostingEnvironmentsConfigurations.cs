@@ -16,7 +16,11 @@ namespace AzureDesignStudio.AzureResources.Web
     {
         [Required]
         [JsonPropertyName("apiVersion")]
-        public override string ApiVersion => "2021-02-01";
+        public override string ApiVersion => "2022-03-01";
+
+        [Required]
+        [JsonPropertyName("type")]
+        public override string Type => "Microsoft.Web/hostingEnvironments/configurations";
 
         /// <summary>
         /// Kind of resource.
@@ -25,14 +29,10 @@ namespace AzureDesignStudio.AzureResources.Web
         public string Kind { get; set; }
 
         /// <summary>
-        /// AseV3NetworkingConfiguration resource specific properties
+        /// CustomDnsSuffixConfiguration resource specific properties
         /// </summary>
         [Required]
         [JsonPropertyName("properties")]
-        public AseV3NetworkingConfigurationProperties Properties { get; set; }
-
-        [Required]
-        [JsonPropertyName("type")]
-        public override string Type => "Microsoft.Web/hostingEnvironments/configurations";
+        public CustomDnsSuffixConfigurationProperties Properties { get; set; }
     }
 }

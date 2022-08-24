@@ -22,7 +22,6 @@ namespace AzureDesignStudio.AzureResources.Compute
         /// <summary>
         /// Resource location
         /// </summary>
-        [Required]
         [JsonPropertyName("location")]
         public string Location { get; set; }
 

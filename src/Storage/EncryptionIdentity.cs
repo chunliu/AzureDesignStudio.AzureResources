@@ -14,6 +14,12 @@ namespace AzureDesignStudio.AzureResources.Storage
     public partial class EncryptionIdentity
     {
         /// <summary>
+        /// ClientId of the multi-tenant application to be used in conjunction with the user-assigned identity for cross-tenant customer-managed-keys server-side encryption on the storage account.
+        /// </summary>
+        [JsonPropertyName("federatedIdentityClientId")]
+        public string FederatedIdentityClientId { get; set; }
+
+        /// <summary>
         /// Resource identifier of the UserAssigned identity to be associated with server-side encryption on the storage account.
         /// </summary>
         [JsonPropertyName("userAssignedIdentity")]

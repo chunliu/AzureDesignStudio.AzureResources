@@ -28,6 +28,12 @@ namespace AzureDesignStudio.AzureResources.Compute
         public string CreateOption { get; set; }
 
         /// <summary>
+        /// Specifies whether data disk should be deleted or detached upon VMSS Flex deletion (This feature is available for VMSS with Flexible OrchestrationMode only).<br><br> Possible values: <br><br> **Delete** If this value is used, the data disk is deleted when the VMSS Flex VM is deleted.<br><br> **Detach** If this value is used, the data disk is retained after VMSS Flex VM is deleted.<br><br> The default value is set to **Delete**.
+        /// </summary>
+        [JsonPropertyName("deleteOption")]
+        public string DeleteOption { get; set; }
+
+        /// <summary>
         /// Specifies the Read-Write IOPS for the managed disk. Should be used only when StorageAccountType is UltraSSD_LRS. If not specified, a default value would be assigned based on diskSizeGB.
         /// </summary>
         [JsonPropertyName("diskIOPSReadWrite")]

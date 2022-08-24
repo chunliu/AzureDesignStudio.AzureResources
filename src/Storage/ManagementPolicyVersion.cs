@@ -14,19 +14,19 @@ namespace AzureDesignStudio.AzureResources.Storage
     public partial class ManagementPolicyVersion
     {
         /// <summary>
-        /// Object to define the number of days after creation.
+        /// Object to define snapshot and version action conditions.
         /// </summary>
         [JsonPropertyName("delete")]
         public DateAfterCreation Delete { get; set; }
 
         /// <summary>
-        /// Object to define the number of days after creation.
+        /// Object to define snapshot and version action conditions.
         /// </summary>
         [JsonPropertyName("tierToArchive")]
         public DateAfterCreation TierToArchive { get; set; }
 
         /// <summary>
-        /// Object to define the number of days after creation.
+        /// Object to define snapshot and version action conditions.
         /// </summary>
         [JsonPropertyName("tierToCool")]
         public DateAfterCreation TierToCool { get; set; }

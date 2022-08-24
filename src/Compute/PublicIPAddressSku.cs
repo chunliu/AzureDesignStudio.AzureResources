@@ -8,7 +8,7 @@ using AzureDesignStudio.AzureResources.Base;
 namespace AzureDesignStudio.AzureResources.Compute
 {
     /// <summary>
-    /// Describes the public IP Sku
+    /// Describes the public IP Sku. It can only be set with OrchestrationMode as Flexible.
     /// </summary>
     [GeneratedCode("ArmTypeGenerator", "0.1.8.0")]
     public partial class PublicIPAddressSku

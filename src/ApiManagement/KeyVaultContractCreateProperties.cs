@@ -14,7 +14,7 @@ namespace AzureDesignStudio.AzureResources.ApiManagement
     public partial class KeyVaultContractCreateProperties
     {
         /// <summary>
-        /// SystemAssignedIdentity or UserAssignedIdentity Client Id which will be used to access key vault secret.
+        /// Null for SystemAssignedIdentity or Client Id for UserAssignedIdentity , which will be used to access key vault secret.
         /// </summary>
         [JsonPropertyName("identityClientId")]
         public string IdentityClientId { get; set; }

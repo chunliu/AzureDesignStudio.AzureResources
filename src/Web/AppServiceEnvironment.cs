@@ -22,6 +22,12 @@ namespace AzureDesignStudio.AzureResources.Web
         public IList<NameValuePair> ClusterSettings { get; set; }
 
         /// <summary>
+        /// Full view of the custom domain suffix configuration for ASEv3.
+        /// </summary>
+        [JsonPropertyName("customDnsSuffixConfiguration")]
+        public CustomDnsSuffixConfiguration CustomDnsSuffixConfiguration { get; set; }
+
+        /// <summary>
         /// Dedicated Host Count
         /// </summary>
         [JsonPropertyName("dedicatedHostCount")]
@@ -56,6 +62,18 @@ namespace AzureDesignStudio.AzureResources.Web
         /// </summary>
         [JsonPropertyName("multiSize")]
         public string MultiSize { get; set; }
+
+        /// <summary>
+        /// Full view of networking configuration for an ASE.
+        /// </summary>
+        [JsonPropertyName("networkingConfiguration")]
+        public AseV3NetworkingConfiguration NetworkingConfiguration { get; set; }
+
+        /// <summary>
+        /// Upgrade Preference.
+        /// </summary>
+        [JsonPropertyName("upgradePreference")]
+        public string UpgradePreference { get; set; }
 
         /// <summary>
         /// User added ip ranges to whitelist on ASE db

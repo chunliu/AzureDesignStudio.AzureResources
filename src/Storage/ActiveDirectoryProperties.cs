@@ -15,6 +15,12 @@ namespace AzureDesignStudio.AzureResources.Storage
     public partial class ActiveDirectoryProperties
     {
         /// <summary>
+        /// Specifies the Active Directory account type for Azure Storage.
+        /// </summary>
+        [JsonPropertyName("accountType")]
+        public string AccountType { get; set; }
+
+        /// <summary>
         /// Specifies the security identifier (SID) for Azure Storage.
         /// </summary>
         [Required]
@@ -55,5 +61,11 @@ namespace AzureDesignStudio.AzureResources.Storage
         [Required]
         [JsonPropertyName("netBiosDomainName")]
         public string NetBiosDomainName { get; set; }
+
+        /// <summary>
+        /// Specifies the Active Directory SAMAccountName for Azure Storage.
+        /// </summary>
+        [JsonPropertyName("samAccountName")]
+        public string SamAccountName { get; set; }
     }
 }

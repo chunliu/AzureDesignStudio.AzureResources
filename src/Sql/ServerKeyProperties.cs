@@ -22,7 +22,7 @@ namespace AzureDesignStudio.AzureResources.Sql
         public string ServerKeyType { get; set; }
 
         /// <summary>
-        /// The URI of the server key. If the ServerKeyType is AzureKeyVault, then the URI is required.
+        /// The URI of the server key. If the ServerKeyType is AzureKeyVault, then the URI is required. The AKV URI is required to be in this format: 'https://YourVaultName.vault.azure.net/keys/YourKeyName/YourKeyVersion'
         /// </summary>
         [JsonPropertyName("uri")]
         public string Uri { get; set; }

@@ -108,6 +108,12 @@ namespace AzureDesignStudio.AzureResources.Web
         public string KeyVaultReferenceIdentity { get; set; }
 
         /// <summary>
+        /// Property to allow or block all public traffic. Allowed Values: 'Enabled', 'Disabled' or an empty string.
+        /// </summary>
+        [JsonPropertyName("publicNetworkAccess")]
+        public string PublicNetworkAccess { get; set; }
+
+        /// <summary>
         /// Site redundancy mode.
         /// </summary>
         [JsonPropertyName("redundancyMode")]
@@ -147,5 +153,23 @@ namespace AzureDesignStudio.AzureResources.Web
         /// Azure Resource Manager ID of the Virtual network and subnet to be joined by Regional VNET Integration.
         [JsonPropertyName("virtualNetworkSubnetId")]
         public string VirtualNetworkSubnetId { get; set; }
+
+        /// <summary>
+        /// To enable accessing content over virtual network
+        /// </summary>
+        [JsonPropertyName("vnetContentShareEnabled")]
+        public bool VnetContentShareEnabled { get; set; }
+
+        /// <summary>
+        /// To enable pulling image over Virtual Network
+        /// </summary>
+        [JsonPropertyName("vnetImagePullEnabled")]
+        public bool VnetImagePullEnabled { get; set; }
+
+        /// <summary>
+        /// Virtual Network Route All enabled. This causes all outbound traffic to have Virtual Network Security Groups and User Defined Routes applied.
+        /// </summary>
+        [JsonPropertyName("vnetRouteAllEnabled")]
+        public bool VnetRouteAllEnabled { get; set; }
     }
 }

@@ -32,6 +32,12 @@ namespace AzureDesignStudio.AzureResources.Sql
         public bool IsDevopsAuditEnabled { get; set; }
 
         /// <summary>
+        /// Specifies whether Managed Identity is used to access blob storage
+        /// </summary>
+        [JsonPropertyName("isManagedIdentityInUse")]
+        public bool IsManagedIdentityInUse { get; set; }
+
+        /// <summary>
         /// Specifies whether storageAccountAccessKey value is the storage's secondary key.
         /// </summary>
         [JsonPropertyName("isStorageSecondaryKeyInUse")]

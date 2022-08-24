@@ -20,6 +20,12 @@ namespace AzureDesignStudio.AzureResources.Sql
         public bool IsAzureMonitorTargetEnabled { get; set; }
 
         /// <summary>
+        /// Specifies whether Managed Identity is used to access blob storage
+        /// </summary>
+        [JsonPropertyName("isManagedIdentityInUse")]
+        public bool IsManagedIdentityInUse { get; set; }
+
+        /// <summary>
         /// Specifies the state of the audit. If state is Enabled, storageEndpoint or isAzureMonitorTargetEnabled are required.
         /// </summary>
         [Required]

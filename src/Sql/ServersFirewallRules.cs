@@ -2,6 +2,7 @@
 
 using System;
 using System.CodeDom.Compiler;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
 using AzureDesignStudio.AzureResources.Base;
@@ -16,17 +17,13 @@ namespace AzureDesignStudio.AzureResources.Sql
     {
         [Required]
         [JsonPropertyName("apiVersion")]
-        public override string ApiVersion => "2021-02-01-preview";
-
-        /// <summary>
-        /// The properties of a server firewall rule.
-        /// </summary>
-        [Required]
-        [JsonPropertyName("properties")]
-        public ServerFirewallRuleProperties Properties { get; set; }
+        public override string ApiVersion => "2022-02-01-preview";
 
         [Required]
         [JsonPropertyName("type")]
         public override string Type => "Microsoft.Sql/servers/firewallRules";
+
+        [JsonPropertyName("values")]
+        public IList<FirewallRule> Values { get; set; }
     }
 }

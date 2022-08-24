@@ -16,7 +16,7 @@ namespace AzureDesignStudio.AzureResources.ApiManagement
     {
         [Required]
         [JsonPropertyName("apiVersion")]
-        public override string ApiVersion => "2021-04-01-preview";
+        public override string ApiVersion => "2021-12-01-preview";
 
         /// <summary>
         /// The external Identity Providers like Facebook, Google, Microsoft, Twitter or Azure Active Directory which can be used to enable access to the API Management service developer portal for all users.

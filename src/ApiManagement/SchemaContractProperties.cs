@@ -22,7 +22,7 @@ namespace AzureDesignStudio.AzureResources.ApiManagement
         public string ContentType { get; set; }
 
         /// <summary>
-        /// Schema Document Properties.
+        /// Api Schema Document Properties.
         /// </summary>
         [JsonPropertyName("document")]
         public SchemaDocumentProperties Document { get; set; }

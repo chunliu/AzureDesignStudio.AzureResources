@@ -28,7 +28,7 @@ namespace AzureDesignStudio.AzureResources.Compute
         public VirtualMachineScaleSetPublicIPAddressConfigurationProperties Properties { get; set; }
 
         /// <summary>
-        /// Describes the public IP Sku
+        /// Describes the public IP Sku. It can only be set with OrchestrationMode as Flexible.
         /// </summary>
         [JsonPropertyName("sku")]
         public PublicIPAddressSku Sku { get; set; }

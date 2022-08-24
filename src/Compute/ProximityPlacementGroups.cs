@@ -2,6 +2,7 @@
 
 using System;
 using System.CodeDom.Compiler;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
 using AzureDesignStudio.AzureResources.Base;
@@ -16,7 +17,7 @@ namespace AzureDesignStudio.AzureResources.Compute
     {
         [Required]
         [JsonPropertyName("apiVersion")]
-        public override string ApiVersion => "2021-07-01";
+        public override string ApiVersion => "2022-03-01";
 
         /// <summary>
         /// Describes the properties of a Proximity Placement Group.
@@ -28,5 +29,11 @@ namespace AzureDesignStudio.AzureResources.Compute
         [Required]
         [JsonPropertyName("type")]
         public override string Type => "Microsoft.Compute/proximityPlacementGroups";
+
+        /// <summary>
+        /// Specifies the Availability Zone where virtual machine, virtual machine scale set or availability set associated with the  proximity placement group can be created.
+        /// </summary>
+        [JsonPropertyName("zones")]
+        public IList<string> Zones { get; set; }
     }
 }

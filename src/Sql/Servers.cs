@@ -17,7 +17,7 @@ namespace AzureDesignStudio.AzureResources.Sql
     {
         [Required]
         [JsonPropertyName("apiVersion")]
-        public override string ApiVersion => "2021-02-01-preview";
+        public override string ApiVersion => "2022-02-01-preview";
 
         /// <summary>
         /// Azure Active Directory identity configuration for a resource.
@@ -32,7 +32,7 @@ namespace AzureDesignStudio.AzureResources.Sql
         [JsonPropertyName("properties")]
         public ServerProperties Properties { get; set; }
         [JsonPropertyName("resources")]
-        public IList<ServersDatabases> Resources { get; set; }
+        public IList<ResourceBase> Resources { get; set; }
 
         [Required]
         [JsonPropertyName("type")]

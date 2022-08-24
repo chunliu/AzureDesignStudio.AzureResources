@@ -21,7 +21,7 @@ namespace AzureDesignStudio.AzureResources.Compute
         public string Type { get; set; }
 
         /// <summary>
-        /// The list of user identities associated with the virtual machine scale set. The user identity dictionary key references will be ARM resource ids in the form: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}'.
+        /// The list of user identities associated with the Virtual Machine. The user identity dictionary key references will be ARM resource ids in the form: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}'.
         /// </summary>
         [JsonPropertyName("userAssignedIdentities")]
         public IDictionary<string, object> UserAssignedIdentities { get; set; }

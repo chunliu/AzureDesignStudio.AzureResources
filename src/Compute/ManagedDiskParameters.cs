@@ -26,6 +26,12 @@ namespace AzureDesignStudio.AzureResources.Compute
         public string Id { get; set; }
 
         /// <summary>
+        /// Specifies the security profile settings for the managed disk. <br><br> NOTE: It can only be set for Confidential VMs
+        /// </summary>
+        [JsonPropertyName("securityProfile")]
+        public VMDiskSecurityProfile SecurityProfile { get; set; }
+
+        /// <summary>
         /// Specifies the storage account type for the managed disk. NOTE: UltraSSD_LRS can only be used with data disks, it cannot be used with OS Disk.
         /// </summary>
         [JsonPropertyName("storageAccountType")]

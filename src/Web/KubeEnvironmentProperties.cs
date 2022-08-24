@@ -19,6 +19,14 @@ namespace AzureDesignStudio.AzureResources.Web
         public AppLogsConfiguration AppLogsConfiguration { get; set; }
         [JsonPropertyName("arcConfiguration")]
         public ArcConfiguration ArcConfiguration { get; set; }
+        [JsonPropertyName("containerAppsConfiguration")]
+        public ContainerAppsConfiguration ContainerAppsConfiguration { get; set; }
+
+        /// <summary>
+        /// Type of Kubernetes Environment. Only supported for Container App Environments with value as Managed
+        /// </summary>
+        [JsonPropertyName("environmentType")]
+        public string EnvironmentType { get; set; }
 
         /// <summary>
         /// Only visible within Vnet/Subnet

@@ -32,6 +32,24 @@ namespace AzureDesignStudio.AzureResources.Web
         public StaticSiteBuildProperties BuildProperties { get; set; }
 
         /// <summary>
+        /// State indicating the status of the enterprise grade CDN serving traffic to the static web app.
+        /// </summary>
+        [JsonPropertyName("enterpriseGradeCdnStatus")]
+        public string EnterpriseGradeCdnStatus { get; set; }
+
+        /// <summary>
+        /// The provider that submitted the last deployment to the primary environment of the static site.
+        /// </summary>
+        [JsonPropertyName("provider")]
+        public string Provider { get; set; }
+
+        /// <summary>
+        /// State indicating whether public traffic are allowed or not for a static web app. Allowed Values: 'Enabled', 'Disabled' or an empty string.
+        /// </summary>
+        [JsonPropertyName("publicNetworkAccess")]
+        public string PublicNetworkAccess { get; set; }
+
+        /// <summary>
         /// A user's github repository token. This is used to setup the Github Actions workflow file and API secrets.
         /// </summary>
         [JsonPropertyName("repositoryToken")]

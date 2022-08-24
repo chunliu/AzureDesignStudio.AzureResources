@@ -21,10 +21,22 @@ namespace AzureDesignStudio.AzureResources.Storage
         public IList<string> BlobTypes { get; set; }
 
         /// <summary>
+        /// An array of strings with maximum 10 blob prefixes to be excluded from the inventory.
+        /// </summary>
+        [JsonPropertyName("excludePrefix")]
+        public IList<string> ExcludePrefix { get; set; }
+
+        /// <summary>
         /// Includes blob versions in blob inventory when value is set to true. The definition.schemaFields values 'VersionId and IsCurrentVersion' are required if this property is set to true, else they must be excluded.
         /// </summary>
         [JsonPropertyName("includeBlobVersions")]
         public bool IncludeBlobVersions { get; set; }
+
+        /// <summary>
+        /// For 'Container' definition.objectType the definition.schemaFields must include 'Deleted, Version, DeletedTime and RemainingRetentionDays'. For 'Blob' definition.objectType and HNS enabled storage accounts the definition.schemaFields must include 'DeletionId, Deleted, DeletedTime and RemainingRetentionDays' and for Hns disabled accounts the definition.schemaFields must include 'Deleted and RemainingRetentionDays', else it must be excluded.
+        /// </summary>
+        [JsonPropertyName("includeDeleted")]
+        public bool IncludeDeleted { get; set; }
 
         /// <summary>
         /// Includes blob snapshots in blob inventory when value is set to true. The definition.schemaFields value 'Snapshot' is required if this property is set to true, else it must be excluded.
@@ -33,7 +45,7 @@ namespace AzureDesignStudio.AzureResources.Storage
         public bool IncludeSnapshots { get; set; }
 
         /// <summary>
-        /// An array of strings for blob prefixes to be matched.
+        /// An array of strings with maximum 10 blob prefixes to be included in the inventory.
         /// </summary>
         [JsonPropertyName("prefixMatch")]
         public IList<string> PrefixMatch { get; set; }
